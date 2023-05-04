@@ -135,6 +135,7 @@ class Media(BaseModel):
     title: Optional[str] = ""
     resources: List[Resource] = []
     clips_metadata: dict = {}
+    coauthor_producers: List[UserShort] = [] # coauthor of the post and what is displayed in the post
 
 
 class MediaOembed(BaseModel):
